@@ -2512,14 +2512,20 @@ afe0 960 8f40 200000 890*0 100000 156*0 3
       <a name="selloc" val="tr"/>
       <a name="width" val="8"/>
     </comp>
+    <comp lib="8" loc="(1250,300)" name="Text">
+      <a name="text" val="03: SUB"/>
+    </comp>
+    <comp lib="8" loc="(1250,320)" name="Text">
+      <a name="text" val="04: SBB"/>
+    </comp>
     <comp lib="8" loc="(1250,605)" name="Text">
       <a name="text" val="10: OR"/>
     </comp>
-    <comp lib="8" loc="(1252,304)" name="Text">
-      <a name="text" val="03: SUB"/>
+    <comp lib="8" loc="(1255,260)" name="Text">
+      <a name="text" val="01: ADD"/>
     </comp>
-    <comp lib="8" loc="(1252,324)" name="Text">
-      <a name="text" val="04: SBB"/>
+    <comp lib="8" loc="(1255,280)" name="Text">
+      <a name="text" val="02: ADC"/>
     </comp>
     <comp lib="8" loc="(1255,565)" name="Text">
       <a name="text" val="08: XOR"/>
@@ -2529,12 +2535,6 @@ afe0 960 8f40 200000 890*0 100000 156*0 3
     </comp>
     <comp lib="8" loc="(1255,675)" name="Text">
       <a name="text" val="12: RAL"/>
-    </comp>
-    <comp lib="8" loc="(1257,264)" name="Text">
-      <a name="text" val="01: ADD"/>
-    </comp>
-    <comp lib="8" loc="(1257,284)" name="Text">
-      <a name="text" val="02: ADC"/>
     </comp>
     <comp lib="8" loc="(1260,470)" name="Text">
       <a name="text" val="05: Comp"/>
@@ -2730,11 +2730,20 @@ afe0 960 8f40 200000 890*0 100000 156*0 3
       <a name="label" val="SelBus"/>
       <a name="width" val="4"/>
     </comp>
-    <comp lib="0" loc="(140,100)" name="Splitter">
+    <comp lib="0" loc="(130,100)" name="Splitter">
       <a name="appear" val="center"/>
       <a name="fanout" val="4"/>
       <a name="incoming" val="4"/>
     </comp>
+    <comp lib="0" loc="(160,150)" name="Constant"/>
+    <comp lib="0" loc="(170,90)" name="Splitter">
+      <a name="appear" val="center"/>
+      <a name="facing" val="west"/>
+      <a name="fanout" val="3"/>
+      <a name="incoming" val="3"/>
+    </comp>
+    <comp lib="0" loc="(240,120)" name="Pull Resistor"/>
+    <comp lib="0" loc="(240,290)" name="Pull Resistor"/>
     <comp lib="0" loc="(400,140)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="label" val="Cin"/>
@@ -2772,25 +2781,6 @@ afe0 960 8f40 200000 890*0 100000 156*0 3
       <a name="label" val="CF"/>
       <a name="output" val="true"/>
     </comp>
-    <comp lib="1" loc="(250,150)" name="AND Gate">
-      <a name="negate0" val="true"/>
-      <a name="negate1" val="true"/>
-      <a name="size" val="30"/>
-    </comp>
-    <comp lib="1" loc="(250,180)" name="AND Gate">
-      <a name="negate0" val="true"/>
-      <a name="size" val="30"/>
-    </comp>
-    <comp lib="1" loc="(320,160)" name="OR Gate">
-      <a name="size" val="30"/>
-    </comp>
-    <comp lib="1" loc="(340,90)" name="AND Gate">
-      <a name="negate0" val="true"/>
-      <a name="size" val="30"/>
-    </comp>
-    <comp lib="1" loc="(400,100)" name="OR Gate">
-      <a name="size" val="30"/>
-    </comp>
     <comp lib="1" loc="(430,140)" name="Controlled Buffer">
       <a name="control" val="left"/>
     </comp>
@@ -2808,60 +2798,58 @@ afe0 960 8f40 200000 890*0 100000 156*0 3
     <comp lib="1" loc="(780,150)" name="OR Gate">
       <a name="size" val="30"/>
     </comp>
+    <comp lib="2" loc="(210,180)" name="Multiplexer">
+      <a name="select" val="3"/>
+      <a name="selloc" val="tr"/>
+    </comp>
+    <comp lib="2" loc="(210,290)" name="Multiplexer">
+      <a name="select" val="3"/>
+      <a name="selloc" val="tr"/>
+    </comp>
     <comp lib="2" loc="(520,280)" name="Multiplexer">
       <a name="selloc" val="tr"/>
       <a name="width" val="8"/>
     </comp>
     <comp lib="3" loc="(460,330)" name="Adder"/>
     <comp lib="3" loc="(830,230)" name="Adder"/>
-    <comp lib="8" loc="(1260,470)" name="Text">
-      <a name="text" val="05: Comp"/>
+    <comp lib="8" loc="(410,449)" name="Text">
+      <a name="text" val="02: SUB"/>
     </comp>
-    <comp lib="8" loc="(1260,495)" name="Text">
-      <a name="text" val="06: FlipCy"/>
-    </comp>
-    <comp lib="8" loc="(1260,530)" name="Text">
-      <a name="text" val="07: CySet"/>
-    </comp>
-    <comp lib="8" loc="(410,450)" name="Text">
-      <a name="text" val="03: SUB"/>
-    </comp>
-    <comp lib="8" loc="(410,470)" name="Text">
-      <a name="text" val="04: SBB"/>
+    <comp lib="8" loc="(410,469)" name="Text">
+      <a name="text" val="03: SBB"/>
     </comp>
     <comp lib="8" loc="(415,410)" name="Text">
-      <a name="text" val="01: ADD"/>
+      <a name="text" val="00: ADD"/>
     </comp>
     <comp lib="8" loc="(415,430)" name="Text">
-      <a name="text" val="02: ADC"/>
+      <a name="text" val="01: ADC"/>
     </comp>
-    <wire from="(120,100)" to="(140,100)"/>
-    <wire from="(160,100)" to="(290,100)"/>
-    <wire from="(160,80)" to="(170,80)"/>
-    <wire from="(160,90)" to="(180,90)"/>
-    <wire from="(170,170)" to="(210,170)"/>
-    <wire from="(170,80)" to="(170,170)"/>
-    <wire from="(170,80)" to="(190,80)"/>
-    <wire from="(180,160)" to="(200,160)"/>
-    <wire from="(180,90)" to="(180,160)"/>
-    <wire from="(180,90)" to="(300,90)"/>
-    <wire from="(190,140)" to="(210,140)"/>
-    <wire from="(190,80)" to="(190,140)"/>
-    <wire from="(190,80)" to="(300,80)"/>
-    <wire from="(200,160)" to="(200,190)"/>
-    <wire from="(200,160)" to="(210,160)"/>
-    <wire from="(200,190)" to="(220,190)"/>
-    <wire from="(250,150)" to="(290,150)"/>
-    <wire from="(250,180)" to="(270,180)"/>
-    <wire from="(270,170)" to="(270,180)"/>
-    <wire from="(270,170)" to="(290,170)"/>
-    <wire from="(290,100)" to="(290,110)"/>
-    <wire from="(290,110)" to="(370,110)"/>
-    <wire from="(300,100)" to="(310,100)"/>
-    <wire from="(300,90)" to="(300,100)"/>
-    <wire from="(320,160)" to="(450,160)"/>
-    <wire from="(340,90)" to="(370,90)"/>
-    <wire from="(400,100)" to="(420,100)"/>
+    <comp lib="8" loc="(470,508)" name="Text">
+      <a name="text" val="05: ADC (Carry Flag only)"/>
+    </comp>
+    <comp lib="8" loc="(475,486)" name="Text">
+      <a name="text" val="04:ADD (Carry Flag only)"/>
+    </comp>
+    <wire from="(120,100)" to="(130,100)"/>
+    <wire from="(160,150)" to="(160,170)"/>
+    <wire from="(160,150)" to="(170,150)"/>
+    <wire from="(160,170)" to="(160,190)"/>
+    <wire from="(160,170)" to="(170,170)"/>
+    <wire from="(160,190)" to="(160,270)"/>
+    <wire from="(160,190)" to="(170,190)"/>
+    <wire from="(160,270)" to="(160,280)"/>
+    <wire from="(160,270)" to="(170,270)"/>
+    <wire from="(160,280)" to="(170,280)"/>
+    <wire from="(170,90)" to="(190,90)"/>
+    <wire from="(190,140)" to="(190,250)"/>
+    <wire from="(190,90)" to="(190,140)"/>
+    <wire from="(210,180)" to="(240,180)"/>
+    <wire from="(210,290)" to="(240,290)"/>
+    <wire from="(240,120)" to="(240,180)"/>
+    <wire from="(240,120)" to="(420,120)"/>
+    <wire from="(240,290)" to="(260,290)"/>
+    <wire from="(260,160)" to="(260,290)"/>
+    <wire from="(260,160)" to="(450,160)"/>
     <wire from="(400,140)" to="(410,140)"/>
     <wire from="(400,180)" to="(780,180)"/>
     <wire from="(400,270)" to="(410,270)"/>
@@ -2869,7 +2857,7 @@ afe0 960 8f40 200000 890*0 100000 156*0 3
     <wire from="(410,270)" to="(410,320)"/>
     <wire from="(410,270)" to="(490,270)"/>
     <wire from="(410,320)" to="(420,320)"/>
-    <wire from="(420,100)" to="(420,130)"/>
+    <wire from="(420,120)" to="(420,130)"/>
     <wire from="(430,140)" to="(440,140)"/>
     <wire from="(440,140)" to="(440,230)"/>
     <wire from="(440,140)" to="(750,140)"/>
@@ -2974,13 +2962,13 @@ afe0 960 8f40 200000 890*0 100000 156*0 3
     </comp>
     <comp lib="2" loc="(700,640)" name="Multiplexer"/>
     <comp lib="8" loc="(890,485)" name="Text">
-      <a name="text" val="05: Comp"/>
+      <a name="text" val="06: Comp"/>
     </comp>
     <comp lib="8" loc="(890,500)" name="Text">
-      <a name="text" val="06: FlipCy"/>
+      <a name="text" val="07: FlipCy"/>
     </comp>
     <comp lib="8" loc="(890,520)" name="Text">
-      <a name="text" val="07: CySet"/>
+      <a name="text" val="08: CySet"/>
     </comp>
     <wire from="(500,570)" to="(520,570)"/>
     <wire from="(500,590)" to="(540,590)"/>
