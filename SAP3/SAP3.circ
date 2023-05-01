@@ -594,8 +594,17 @@ c960 8f40 af60 afe0 7960 8f40 af60 afe0
 1660 11 200000 9*0 af60 afe0 c960 8f40
 1760 11 200000 9*0 af60 afe0 c960 8f40
 a760 a6e0 1960 11 200000 7*0 af60 afe0
-c960 8f40 1060 11 200000 1001*0 af60 afe0
-c960 8f40 af60 afe0 1960 11 8f40 200000
+c960 8f40 1060 11 200000 265*0 af60 afe0
+c960 8f40 1260 1a 200000 9*0 af60 afe0
+c960 8f40 1360 10 200000 9*0 af60 afe0
+c960 8f40 1460 1a 200000 9*0 af60 afe0
+c960 8f40 1560 1a 200000 9*0 af60 afe0
+c960 8f40 1660 1a 200000 9*0 af60 afe0
+c960 8f40 1760 1a 200000 25*0 af60 afe0
+c960 8f40 1060 1a 200000 489*0 af60 afe0
+c960 8f40 af60 afe0 1960 10 8f40 200000
+118*0 af60 afe0 c960 8f40 af60 afe0 1960
+11 8f40 200000
 </a>
       <a name="dataWidth" val="24"/>
       <a name="label" val="MicroCode"/>
@@ -1701,100 +1710,100 @@ c960 8f40 af60 afe0 1960 11 8f40 200000
       <a name="fanout" val="3"/>
       <a name="incoming" val="24"/>
     </comp>
-    <comp lib="8" loc="(104,1015)" name="Text">
+    <comp lib="8" loc="(100,1015)" name="Text">
       <a name="text" val="13: RAL"/>
     </comp>
-    <comp lib="8" loc="(104,800)" name="Text">
+    <comp lib="8" loc="(100,800)" name="Text">
       <a name="text" val="00: ADD"/>
     </comp>
-    <comp lib="8" loc="(104,815)" name="Text">
+    <comp lib="8" loc="(100,815)" name="Text">
       <a name="text" val="01: ADC"/>
     </comp>
-    <comp lib="8" loc="(104,945)" name="Text">
+    <comp lib="8" loc="(100,945)" name="Text">
       <a name="text" val="09: XOR"/>
     </comp>
-    <comp lib="8" loc="(104,960)" name="Text">
+    <comp lib="8" loc="(100,960)" name="Text">
       <a name="text" val="10: AND"/>
     </comp>
-    <comp lib="8" loc="(104,995)" name="Text">
+    <comp lib="8" loc="(100,995)" name="Text">
       <a name="text" val="12: RAR"/>
     </comp>
-    <comp lib="8" loc="(109,900)" name="Text">
+    <comp lib="8" loc="(105,900)" name="Text">
       <a name="text" val="06: Comp"/>
     </comp>
-    <comp lib="8" loc="(109,915)" name="Text">
+    <comp lib="8" loc="(105,915)" name="Text">
       <a name="text" val="07: FlipCy"/>
     </comp>
-    <comp lib="8" loc="(109,930)" name="Text">
+    <comp lib="8" loc="(105,930)" name="Text">
       <a name="text" val="08: CySet"/>
     </comp>
-    <comp lib="8" loc="(139,1030)" name="Text">
+    <comp lib="8" loc="(135,1030)" name="Text">
       <a name="text" val="14: RotThruCy-R"/>
     </comp>
-    <comp lib="8" loc="(139,1045)" name="Text">
+    <comp lib="8" loc="(135,1045)" name="Text">
       <a name="text" val="15: RotThruCy-L"/>
     </comp>
-    <comp lib="8" loc="(146,530)" name="Text">
+    <comp lib="8" loc="(145,530)" name="Text">
       <a name="text" val="INC_DEC - 8"/>
     </comp>
-    <comp lib="8" loc="(156,373)" name="Text">
+    <comp lib="8" loc="(155,370)" name="Text">
       <a name="text" val="temp - 1"/>
     </comp>
-    <comp lib="8" loc="(158,653)" name="Text">
+    <comp lib="8" loc="(155,650)" name="Text">
       <a name="text" val="Stack - D"/>
     </comp>
-    <comp lib="8" loc="(160,607)" name="Text">
-      <a name="text" val="MDR - B"/>
-    </comp>
-    <comp lib="8" loc="(162,555)" name="Text">
+    <comp lib="8" loc="(160,555)" name="Text">
       <a name="text" val="RAM - 9"/>
     </comp>
-    <comp lib="8" loc="(162,582)" name="Text">
+    <comp lib="8" loc="(160,580)" name="Text">
       <a name="text" val="MAR - A"/>
     </comp>
-    <comp lib="8" loc="(169,677)" name="Text">
+    <comp lib="8" loc="(160,605)" name="Text">
+      <a name="text" val="MDR - B"/>
+    </comp>
+    <comp lib="8" loc="(165,675)" name="Text">
       <a name="text" val="PC - F"/>
     </comp>
-    <comp lib="8" loc="(169,885)" name="Text">
+    <comp lib="8" loc="(165,885)" name="Text">
       <a name="text" val="05: ADC (Carry Flag only)"/>
     </comp>
-    <comp lib="8" loc="(171,414)" name="Text">
-      <a name="text" val="C - 3"/>
-    </comp>
-    <comp lib="8" loc="(172,354)" name="Text">
+    <comp lib="8" loc="(170,350)" name="Text">
       <a name="text" val="A - 0"/>
     </comp>
-    <comp lib="8" loc="(172,436)" name="Text">
-      <a name="text" val="D - 4"/>
-    </comp>
-    <comp lib="8" loc="(172,631)" name="Text">
-      <a name="text" val="IE - C"/>
-    </comp>
-    <comp lib="8" loc="(173,393)" name="Text">
+    <comp lib="8" loc="(170,390)" name="Text">
       <a name="text" val="B - 2"/>
     </comp>
-    <comp lib="8" loc="(173,480)" name="Text">
+    <comp lib="8" loc="(170,410)" name="Text">
+      <a name="text" val="C - 3"/>
+    </comp>
+    <comp lib="8" loc="(170,435)" name="Text">
+      <a name="text" val="D - 4"/>
+    </comp>
+    <comp lib="8" loc="(170,480)" name="Text">
       <a name="text" val="H - 6"/>
     </comp>
-    <comp lib="8" loc="(173,504)" name="Text">
+    <comp lib="8" loc="(170,500)" name="Text">
       <a name="text" val="L - 7"/>
     </comp>
-    <comp lib="8" loc="(174,865)" name="Text">
+    <comp lib="8" loc="(170,630)" name="Text">
+      <a name="text" val="IE - C"/>
+    </comp>
+    <comp lib="8" loc="(170,865)" name="Text">
       <a name="text" val="04: ADD (Carry Flag only)"/>
     </comp>
-    <comp lib="8" loc="(176,459)" name="Text">
+    <comp lib="8" loc="(175,455)" name="Text">
       <a name="text" val="E - 5 "/>
     </comp>
-    <comp lib="8" loc="(523,114)" name="Text">
+    <comp lib="8" loc="(520,110)" name="Text">
       <a name="text" val="Last Instruction Added: "/>
     </comp>
-    <comp lib="8" loc="(99,835)" name="Text">
+    <comp lib="8" loc="(95,835)" name="Text">
       <a name="text" val="02: SUB"/>
     </comp>
-    <comp lib="8" loc="(99,850)" name="Text">
+    <comp lib="8" loc="(95,850)" name="Text">
       <a name="text" val="03: SBB"/>
     </comp>
-    <comp lib="8" loc="(99,980)" name="Text">
+    <comp lib="8" loc="(95,980)" name="Text">
       <a name="text" val="11: OR"/>
     </comp>
     <wire from="(1100,210)" to="(1180,210)"/>
